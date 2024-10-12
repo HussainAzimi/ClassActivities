@@ -1,0 +1,56 @@
+/* Class & ID Selectors */
+#main-header {
+  background-color: lightblue;
+  padding: 10px;
+}
+
+.main-nav {
+  background-color: lightgrey;
+  padding: 10px;
+}
+
+/* Chain a class selector onto an element selector */
+header#main-header {
+  font-size: 20px;
+}
+
+/* Group two or more selectors */
+.content, .sidebar {
+  border: 1px solid black;
+  margin: 10px;
+  padding: 20px;
+}
+
+/* Select all child list items from one of your lists */
+.main-nav ul > li {
+  list-style-type: none;
+  margin: 5px 0;
+}
+
+/* Select an element that is a sibling of another element */
+.content + .sidebar {
+  background-color: #f0f0f0;
+}
+
+/* Explore the Box Model */
+/* Use the universal selector to give all elements a border */
+* {
+  border: 1px solid black;
+}
+
+/* Add padding and margin on some elements */
+.content {
+  padding: 20px;
+  margin: 15px;
+}
+
+.sidebar {
+  padding: 10px 15px 20px 25px;
+  margin: 5px 10px 15px 20px;
+}
+
+/* Using pseudo-classes for hover effect */
+.main-nav ul > li:hover {
+  background-color: green;
+  color: #f0f0f0;
+}
